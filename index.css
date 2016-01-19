@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #eee;
+  font: normal 13px Menlo, monospace;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1 1 auto;
+}
+
+.header-row {
+  flex: 0 0 auto;
+  padding: 1em;
+}
+
+.branding {
+  font-weight: bold;
+}
+
+.xform-mode-link {
+  text-decoration: underline;
+}
+
+.xform-mode-link-active {
+  text-decoration: none;
+}
+
+.content-row {
+  flex: 1 1 auto;
+}
+
+.field-container {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+
+.field {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  width: 300px;
+}
+
+.field-textarea {
+  background: #eee;
+  border: 2px solid #eee;
+  display: block;
+  flex: 1 1 auto;
+  font: inherit;
+  padding: 2em 1em 1em;
+  resize: none;
+  white-space: pre;
+  word-wrap: normal;
+  tab-size: 20;
+}
+
+.field-textarea:focus {
+  background: #fff;
+  border-color: orange;
+  outline: none;
+}
+
+.field-label {
+  background: linear-gradient(-5deg, transparent, #eee, #eee);
+  color: gray;
+  display: block;
+  left: 2px;
+  padding: 0.3em 0.6em 0.6em;
+  pointer-events: none;
+  position: absolute;
+  top: 2px;
+  width: 90%;
+}
+
+.field-textarea:focus + .field-label {
+  background: linear-gradient(-5deg, transparent, #fff, #fff);
+  color: #DE8105;
+}
+
+.last-input {
+  background: none;
+  border: none;
+  height: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  resize: none;
+  top: 0;
+  width: 0;
+}

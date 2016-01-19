@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>a2b</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="underscore-1.8.3.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body class="row-container">
+  <header class="row header-row">
+    <div class="branding">a2b</div>
+    <div>
+      <span>basic:</span>
+      <a class="xform-mode-link" href="#upper">#upper</a>
+      <a class="xform-mode-link" href="#lower">#lower</a>
+      <a class="xform-mode-link" href="#identity">#identity</a>
+    </div>
+  </header>
+  <div class="row content-row field-container">
+    <div class="field input-field">
+      <textarea
+        class="field-textarea"
+        placeholder="Type here&hellip;"
+        spellcheck="false"
+      ></textarea>
+      <label class="field-label">Input</label>
+    </div>
+    <div class="field output-field">
+      <textarea
+        class="field-textarea"
+        placeholder=""
+        readonly
+        spellcheck="false"
+      ></textarea>
+      <label class="field-label">Output</label>
+    </div>
+  </div>
+  <textarea class="last-input"></textarea>
+</body>
+</html>
